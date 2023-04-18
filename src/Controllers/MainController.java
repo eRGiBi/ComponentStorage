@@ -13,10 +13,15 @@ public class MainController {
 
         ArrayList<Item> MainStorage = Loader.Load(FileName);
 
-        for (Object item: MainStorage) {
+        PrintStorage(MainStorage);
+
+
+
+
+    }
+    private void PrintStorage(ArrayList<Item> C){
+        for (Object item: C) {
             System.out.println(item.toString());
         }
-
-
     }
 }

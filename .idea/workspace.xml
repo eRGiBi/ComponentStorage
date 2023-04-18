@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf7b723e-be4d-454c-b566-0ae34dabf898" name="Changes" comment="1.5">
+    <list default="true" id="bf7b723e-be4d-454c-b566-0ae34dabf898" name="Changes" comment="1.6">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FileReading/Loader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FileReading/Loader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controllers/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/MainController.java" afterDir="false" />
     </list>
     <list id="321e7064-2529-4419-96f8-3d81f633205e" name="Changes by Máté" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -64,7 +64,9 @@
       <workItem from="1681657508337" duration="10954000" />
       <workItem from="1681746174038" duration="1318000" />
       <workItem from="1681814523520" duration="609000" />
-      <workItem from="1681815189049" duration="1613000" />
+      <workItem from="1681815189049" duration="1851000" />
+      <workItem from="1681819100166" duration="46000" />
+      <workItem from="1681833787534" duration="191000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1681577651122</created>
@@ -87,7 +89,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681816336262</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="1.6">
+      <created>1681817044954</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1681817044954</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,7 +123,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Initial commit" />
     <MESSAGE value="1.5" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.5" />
+    <MESSAGE value="1.6" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.6" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
