@@ -4,29 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf7b723e-be4d-454c-b566-0ae34dabf898" name="Changes" comment="Initial commit">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controllers/MainController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Data/Data.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FileReading/Loader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FileReading/Parser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Modell/Equipments/Equipment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Modell/Equipments/Glove.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Modell/Equipments/Mask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Modell/Item.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Modell/Products/Notebook.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Modell/Products/Pencil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Modell/Products/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StorageUnits/BaseStorage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StorageUnits/EquipmentStorage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StorageUnits/GloveStorage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StorageUnits/MaskStorage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StorageUnits/NotebookStorage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StorageUnits/PencilStorage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StorageUnits/ProductStorage.java" afterDir="false" />
+    <list default="true" id="bf7b723e-be4d-454c-b566-0ae34dabf898" name="Changes" comment="1.5">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FileReading/Loader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FileReading/Loader.java" afterDir="false" />
     </list>
     <list id="321e7064-2529-4419-96f8-3d81f633205e" name="Changes by Máté" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -84,7 +64,7 @@
       <workItem from="1681657508337" duration="10954000" />
       <workItem from="1681746174038" duration="1318000" />
       <workItem from="1681814523520" duration="609000" />
-      <workItem from="1681815189049" duration="827000" />
+      <workItem from="1681815189049" duration="1613000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1681577651122</created>
@@ -100,7 +80,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681577659257</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="1.5">
+      <created>1681816336262</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1681816336262</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -126,7 +113,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="1.5" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.5" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

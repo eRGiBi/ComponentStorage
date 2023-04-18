@@ -9,20 +9,26 @@ public class Loader {
     public static ArrayList<Item> Load(String FileName) throws FileNotFoundException {
 
         ArrayList<Item> Container = new ArrayList<Item>();
+        String line;
 
         try {
 
             BufferedReader bfr = new BufferedReader(new FileReader(FileName));
 
-            if(bfr != null){
-                while(bfr.readLine() != null){
+//                while(bfr.readLine() != null){
+//
+//                    Item ObjectToAdd = Parser.Parse(bfr.readLine());
+//
+//                    Container.add(ObjectToAdd);
+//
+//                }
+            while((line = bfr.readLine()) != null){
 
-                    Item ObjectToAdd = Parser.Parse(bfr.readLine());
+                Item ObjectToAdd = Parser.Parse(line);
 
-                    Container.add(ObjectToAdd);
-
-                }
+                Container.add(ObjectToAdd);
             }
+
             bfr.close();
 
         } catch (FileNotFoundException e) {
