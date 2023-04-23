@@ -5,23 +5,18 @@ import Modell.Item;
 import java.io.*;
 import java.util.ArrayList;
 
+
 public class Loader {
+
     public static ArrayList<Item> Load(String FileName) throws FileNotFoundException {
 
-        ArrayList<Item> Container = new ArrayList<Item>();
+        ArrayList<Item> Container = new ArrayList<>();
         String line;
 
         try {
 
             BufferedReader bfr = new BufferedReader(new FileReader(FileName));
 
-//                while(bfr.readLine() != null){
-//
-//                    Item ObjectToAdd = Parser.Parse(bfr.readLine());
-//
-//                    Container.add(ObjectToAdd);
-//
-//                }
             while((line = bfr.readLine()) != null){
 
                 Item ObjectToAdd = Parser.Parse(line);

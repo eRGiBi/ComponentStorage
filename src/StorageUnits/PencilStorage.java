@@ -1,7 +1,5 @@
 package StorageUnits;
 
-import Modell.Equipments.Glove;
-import Modell.Item;
 import Modell.Products.Pencil;
 
 import java.util.ArrayList;
@@ -10,30 +8,45 @@ public class PencilStorage extends ProductStorage{
 
     private ArrayList<Pencil> Container;
 
-    public PencilStorage(ArrayList<Pencil> container) {
-        Container = container;
+    public PencilStorage() {
+
+        Container = new ArrayList<Pencil>();
+    }
+    public void add(Pencil pencil){
+        Container.add(pencil);
     }
 
     @Override
     public void SortByQuantity() {
-        for(int i = 0; i < Container.size(); i++){
-            Pencil temp;
-            if(Container.get(i).getQuantity() > Container.get(i + 1).getQuantity()){
-                temp = Container.get(i + 1);
-                Container.set(i + 1, Container.get(i));
-                Container.set(i, temp);
+        for (int i = 0; i < Container.size() - 1; i++) {
+            for (int j = i + 1; j < Container.size(); j++) {
+                Pencil temp = Container.get(i);
+                Pencil temp2 = Container.get(j);
+                if (temp.getQuantity() > temp2.getQuantity()) {
+                    Container.set(i, temp2);
+                    Container.set(j, temp);
+                }
             }
         }
     }
     @Override
     public void SortByPrice() {
-        for(int i = 0; i < Container.size(); i++){
-            Pencil temp;
-            if(Container.get(i).getPrice() > Container.get(i + 1).getPrice()){
-                temp = Container.get(i + 1);
-                Container.set(i + 1, Container.get(i));
-                Container.set(i, temp);
+        for (int i = 0; i < Container.size() - 1; i++) {
+            for (int j = i + 1; j < Container.size(); j++) {
+                Pencil temp = Container.get(i);
+                Pencil temp2 = Container.get(j);
+                if (temp.getPrice() > temp2.getPrice()) {
+                    Container.set(i, temp2);
+                    Container.set(j, temp);
+                }
             }
+        }
+    }
+
+    @Override
+    public void Print() {
+        for (Pencil pencil: Container) {
+            System.out.println(pencil);
         }
     }
 }

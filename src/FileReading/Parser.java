@@ -6,11 +6,17 @@ import Modell.Equipments.Mask;
 import Modell.Products.Notebook;
 import Modell.Products.Pencil;
 
+import static Controllers.MainController.Customers;
+
+
 public class Parser {
 
     public static Item Parse(String line){
 
         String[] data = line.split(";");
+
+        String customer = data[4] + ' ' + data[5];
+        Customers.add(customer);
 
         switch (data[0]) {
             case "Glove" -> {
@@ -27,5 +33,6 @@ public class Parser {
             }
             default -> {return null;}
         }
+
     }
 }

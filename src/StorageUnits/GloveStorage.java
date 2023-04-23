@@ -1,37 +1,55 @@
 package StorageUnits;
 
 import Modell.Equipments.Glove;
-import Modell.Item;
+import Modell.Equipments.Mask;
 
 import java.util.ArrayList;
 
 public class GloveStorage extends EquipmentStorage
 {
     private ArrayList<Glove> Container;
-    public GloveStorage(ArrayList<Glove> container) {
-        Container = container;
+
+    public GloveStorage() {
+        Container =  new ArrayList<Glove>();
     }
+    public void add(Glove glove) {
+        Container.add(glove);
+    }
+
 
     @Override
     public void SortByQuantity() {
-        for(int i = 0; i < Container.size(); i++){
-            Glove temp;
-            if(Container.get(i).getQuantity() > Container.get(i + 1).getQuantity()){
-                temp = Container.get(i + 1);
-                Container.set(i + 1, Container.get(i));
-                Container.set(i, temp);
+        for (int i = 0; i < Container.size() - 1; i++) {
+            for (int j = i + 1; j < Container.size(); j++) {
+                Glove temp = Container.get(i);
+                Glove temp2 = Container.get(j);
+                if (temp.getQuantity() > temp2.getQuantity()) {
+                    Container.set(i, temp2);
+                    Container.set(j, temp);
+                }
             }
         }
     }
     @Override
     public void SortBySecurityLevel() {
-        for(int i = 0; i < Container.size(); i++){
-            Glove temp;
-            if(Container.get(i).getSecurityLevel() > Container.get(i + 1).getSecurityLevel()){
-                temp = Container.get(i + 1);
-                Container.set(i + 1, Container.get(i));
-                Container.set(i, temp);
+        for (int i = 0; i < Container.size() - 1; i++) {
+            for (int j = i + 1; j < Container.size(); j++) {
+                Glove temp = Container.get(i);
+                Glove temp2 = Container.get(j);
+                if (temp.getSecurityLevel() > temp2.getSecurityLevel()) {
+                    Container.set(i, temp2);
+                    Container.set(j, temp);
+                }
             }
         }
     }
+
+    @Override
+    public void Print() {
+        for (Glove glove: Container) {
+            System.out.println(glove);
+        }
+    }
+
+
 }
