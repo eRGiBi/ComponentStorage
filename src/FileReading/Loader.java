@@ -19,9 +19,9 @@ public class Loader {
 
             while((line = bfr.readLine()) != null){
 
-                Item ObjectToAdd = Parser.Parse(line);
+                Item ToAdd = Parser.Parse(line);
 
-                Container.add(ObjectToAdd);
+                Container.add(ToAdd);
             }
 
             bfr.close();

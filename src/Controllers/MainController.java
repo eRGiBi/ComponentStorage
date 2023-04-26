@@ -54,8 +54,10 @@ public class MainController {
         pencilStorage.Print();
 
         Customers.Print();
+
         Customers.SortByName();
         System.out.println();
+
         Customers.Print();
     }
 

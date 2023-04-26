@@ -5,19 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bf7b723e-be4d-454c-b566-0ae34dabf898" name="Changes" comment="1.6">
-      <change afterPath="$PROJECT_DIR$/src/StorageUnits/CustomerStorage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controllers/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Data/Data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/Data/Data.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/FileReading/Loader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FileReading/Loader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FileReading/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FileReading/Parser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StorageUnits/BaseStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StorageUnits/BaseStorage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StorageUnits/EquipmentStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StorageUnits/EquipmentStorage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StorageUnits/GloveStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StorageUnits/GloveStorage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StorageUnits/MaskStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StorageUnits/MaskStorage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StorageUnits/NotebookStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StorageUnits/NotebookStorage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StorageUnits/PencilStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StorageUnits/PencilStorage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StorageUnits/ProductStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StorageUnits/ProductStorage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StorageUnits/CustomerStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StorageUnits/CustomerStorage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,6 +86,7 @@
       <workItem from="1681931143701" duration="125000" />
       <workItem from="1682005238900" duration="81000" />
       <workItem from="1682271956198" duration="9611000" />
+      <workItem from="1682528876558" duration="3133000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1681577651122</created>

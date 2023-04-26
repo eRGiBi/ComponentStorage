@@ -26,7 +26,21 @@ public class CustomerStorage {
                 String temp = Customers.get(i);
                 String temp2 = Customers.get(j);
 
-                if (temp.charAt(0) > temp2.charAt(0)) {
+                int k = 0;
+                if(temp.charAt(k) == temp2.charAt(k)){
+
+                    while (k < temp.length() && k < temp2.length() && temp.charAt(k) == temp2.charAt(k)){
+                        if (temp.charAt(k) > temp2.charAt(k)) {
+                            Customers.set(i, temp2);
+                            Customers.set(j, temp);
+                            break;
+                        }
+                        if(temp.charAt(k) < temp2.charAt(k)){
+                            break;
+                        }
+                        k++;
+                    }
+                } else if (temp.charAt(k) > temp2.charAt(k)) {
                     Customers.set(i, temp2);
                     Customers.set(j, temp);
                 }
