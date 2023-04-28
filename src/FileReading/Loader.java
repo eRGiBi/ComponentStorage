@@ -1,38 +1,41 @@
 package FileReading;
 
+import FileReading.Parsers.IParser;
+
 import Modell.Item;
 
 import java.io.*;
 import java.util.ArrayList;
 
 
-public class Loader {
+public class Loader <T extends  Item>{
 
-    public static ArrayList<Item> Load(String FileName) throws FileNotFoundException {
+    public ArrayList<T> load(String FileName, IParser parser) throws IOException {
 
-        ArrayList<Item> Container = new ArrayList<>();
+        ArrayList<T> container = new ArrayList<>();
         String line;
 
         try {
 
             BufferedReader bfr = new BufferedReader(new FileReader(FileName));
 
-            while((line = bfr.readLine()) != null){
+            while ((line = bfr.readLine()) != null) {
 
-                Item ToAdd = Parser.Parse(line);
+                //Solutions would be using type tokens or to generify the parsers
+                T objectToAdd = (T) parser.Parse(line);
 
-                Container.add(ToAdd);
+                if(objectToAdd != null){
+                    container.add(objectToAdd);
+                }
             }
-
             bfr.close();
 
         } catch (FileNotFoundException e) {
             throw new FileNotFoundException();
 
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            throw new IOException(e);
         }
-        return Container;
+        return container;
     }
-
 }

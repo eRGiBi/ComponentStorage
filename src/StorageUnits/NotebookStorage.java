@@ -1,7 +1,5 @@
 package StorageUnits;
 
-import Modell.Equipments.Glove;
-import Modell.Item;
 import Modell.Products.Notebook;
 
 import java.util.ArrayList;
@@ -15,6 +13,9 @@ public class NotebookStorage extends ProductStorage{
     }
     public void add(Notebook notebook){
         Container.add(notebook);
+    }
+    public void addAll(ArrayList<Notebook> list){
+        Container.addAll(list);
     }
     @Override
     public void SortByQuantity() {

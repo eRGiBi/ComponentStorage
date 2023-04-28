@@ -1,7 +1,6 @@
 package StorageUnits;
 
 import java.util.ArrayList;
-import java.util.Collections;
 
 public class CustomerStorage {
 
@@ -27,22 +26,23 @@ public class CustomerStorage {
                 String temp2 = Customers.get(j);
 
                 int k = 0;
-                if(temp.charAt(k) == temp2.charAt(k)){
+                if(temp.charAt(k) > temp2.charAt(k)) {
+                    Customers.set(i, temp2);
+                    Customers.set(j, temp);
 
-                    while (k < temp.length() && k < temp2.length() && temp.charAt(k) == temp2.charAt(k)){
+                } else if (temp.charAt(k) == temp2.charAt(k)) {
+
+                    while (k < temp.length() && k < temp2.length()) {
                         if (temp.charAt(k) > temp2.charAt(k)) {
                             Customers.set(i, temp2);
                             Customers.set(j, temp);
                             break;
                         }
-                        if(temp.charAt(k) < temp2.charAt(k)){
+                        if (temp.charAt(k) < temp2.charAt(k)) {
                             break;
                         }
                         k++;
                     }
-                } else if (temp.charAt(k) > temp2.charAt(k)) {
-                    Customers.set(i, temp2);
-                    Customers.set(j, temp);
                 }
             }
         }

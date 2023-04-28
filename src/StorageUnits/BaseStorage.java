@@ -1,6 +1,5 @@
 package StorageUnits;
 
-import Modell.Equipments.Equipment;
 
 abstract public class BaseStorage{
 

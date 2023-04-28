@@ -1,6 +1,5 @@
 package StorageUnits;
 
-import Modell.Equipments.Glove;
 import Modell.Equipments.Mask;
 import java.util.ArrayList;
 
@@ -13,6 +12,10 @@ public class MaskStorage extends EquipmentStorage {
     }
     public void add(Mask mask) {
         Container.add(mask);
+    }
+
+    public void addAll(ArrayList<Mask> list){
+        Container.addAll(list);
     }
 
     @Override
@@ -41,7 +44,6 @@ public class MaskStorage extends EquipmentStorage {
             }
         }
     }
-
     @Override
     public void Print() {
         for (Mask mask: Container) {

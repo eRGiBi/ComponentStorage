@@ -1,7 +1,6 @@
 package StorageUnits;
 
 import Modell.Equipments.Glove;
-import Modell.Equipments.Mask;
 
 import java.util.ArrayList;
 
@@ -16,6 +15,9 @@ public class GloveStorage extends EquipmentStorage
         Container.add(glove);
     }
 
+    public void addAll(ArrayList<Glove> list){
+        Container.addAll(list);
+    }
 
     @Override
     public void SortByQuantity() {

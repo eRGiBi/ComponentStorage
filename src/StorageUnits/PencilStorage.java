@@ -7,13 +7,14 @@ import java.util.ArrayList;
 public class PencilStorage extends ProductStorage{
 
     private ArrayList<Pencil> Container;
-
     public PencilStorage() {
-
         Container = new ArrayList<Pencil>();
     }
     public void add(Pencil pencil){
         Container.add(pencil);
+    }
+    public void addAll(ArrayList<Pencil> list) {
+        Container.addAll(list);
     }
 
     @Override

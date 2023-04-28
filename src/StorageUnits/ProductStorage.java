@@ -7,4 +7,5 @@ abstract public class ProductStorage extends BaseStorage{
 
     @Override
     abstract public void Print();
+
 }
