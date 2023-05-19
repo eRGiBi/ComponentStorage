@@ -9,10 +9,12 @@ import java.util.ArrayList;
 
 
 public class Loader <T extends  Item>{
-
+    private ArrayList<T> container;
+    public Loader() {
+        container = new ArrayList<>();
+    }
     public ArrayList<T> load(String FileName, IParser parser) throws IOException {
 
-        ArrayList<T> container = new ArrayList<>();
         String line;
 
         try {

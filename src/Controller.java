@@ -1,5 +1,3 @@
-package Controllers;
-
 import FileReading.Loader;
 import FileReading.Parsers.GloveParser;
 import FileReading.Parsers.MaskParser;
@@ -7,18 +5,15 @@ import FileReading.Parsers.NotebookParser;
 import FileReading.Parsers.PencilParser;
 import Modell.Equipments.Glove;
 import Modell.Equipments.Mask;
-import Modell.Item;
 import Modell.Products.Notebook;
 import Modell.Products.Pencil;
 import StorageUnits.*;
 
-import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.util.ArrayList;
 
-public class MainController {
+public class Controller {
 
-    public MainController() {
+    public Controller() {
         Customers = new CustomerStorage();
     }
     //CustomerStorage used with dependency injection
